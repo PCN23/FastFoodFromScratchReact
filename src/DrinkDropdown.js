@@ -5,9 +5,9 @@ export default function DrinkDropdown({ setDrink }) {
     <div>
       Select a drink:
       <select onChange={e => setDrink(e.target.value)}>
-        <option value='1'>Tamales</option>
-        <option value='2' >Torta</option>
-        <option value='3' >Birria tacos</option>
+        <option value='1'>Horchata</option>
+        <option value='2'>PassionFruit Juice</option>
+        <option value='3'>Coke</option>
       </select>
     </div>
   );
