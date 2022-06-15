@@ -13,15 +13,9 @@ function App() {
   const [foodId, setFoodId] = useState('1');
   const [sideId, setSideId] = useState('1');
   const [drinkId, setDrinkId] = useState('1');
-  const [instructions, setInstructions] = useState(['Instructions']);
-  const [formInstruction, setFormInstruction] = useState('');
+  const [instructions, setInstructions] = useState([]);
   const [orderName, setOrderName] = useState('');
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    setInstructions([]);
-
-  }
   
   return (
     <div className="App">
@@ -40,8 +34,8 @@ function App() {
 
           </div>
         </section>
-        <InstructionsForm setFormInstruction={setFormInstruction} handleSubmit={handleSubmit} />
-        <InstructionsList setInstructions={setInstructions}/>
+        <InstructionsForm setInstructions={setInstructions} instructions={instructions}/>
+        <InstructionsList instructions={instructions}/>
       </div>
     </div>
   );

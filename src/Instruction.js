@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Instruction({ instruction }) {
   return (
-    <div className='instructon'>
+    <div className='instruction'>
       <p>{instruction}</p>
     </div>
   );
