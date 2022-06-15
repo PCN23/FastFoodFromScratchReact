@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default function InstructionForm() {
+export default function InstructionsForm({ setInstruction, handleSubmit }) {
+
   return (
-    <div>InstructionForm</div>
+    <section>
+      <p>Form:</p>
+    </section>
   );
 }
